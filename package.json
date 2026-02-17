@@ -1,0 +1,24 @@
+{
+  "name": "ticket-felixotas-v2",
+  "version": "1.0.0",
+  "description": "Professional Discord ticket system bot built with discord.js v14 and button components.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy:commands": "node src/deploy-commands.js",
+    "check": "node --check src/index.js && node --check src/deploy-commands.js && node --check src/events/interactionCreate.js && node --check src/commands/ticket.js && node --check src/utils/embeds.js"
+  },
+  "keywords": [
+    "discord",
+    "discordjs",
+    "ticket-system",
+    "support-bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^16.4.5"
+  }
+}
